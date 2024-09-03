@@ -52,3 +52,19 @@ Clients can perform various operations by sending commands to `Smain`. The follo
    gcc -o Stext Stext.c
    gcc -o client24s client24s.c
 
+2. **Start the Servers**:
+   ```bash
+   ./Smain
+   ./Spdf
+   ./Stext
+   ./client24s
+
+3. **Execute Commands**
+   ```bash
+   client24s$ ufile sample.c ~smain/folder1/folder2
+   client24s$ dfile ~smain/folder1/folder2/sample.txt
+   client24s$ rmfile ~smain/folder1/folder2/sample.pdf
+   client24s$ dtar .txt
+   client24s$ display ~smain/folder1
+
+
